@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --primary: #3a10e5;
+    --secondary: #facb3b;
+    --bg-color: white;
+    --first-section-bg: #f0f3ff;
+    --third-color: #fff0e5;
+    --link-disabled: #a1a1a1;
+}
+
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+nav {
+    background-color: white;
+    height: 9vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.logo, .navigation {
+    text-align: center;
+}
+
+.logo {
+    width: 40%;
+}
+
+.navigation {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.navigation .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .link a {
+    font-weight: 500;
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    color: var(--primary) !important;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 91vh;
+    background-color: var(--first-section-bg);
+}
+
+.description h1 {
+    text-align: left;
+    width: 80%;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.description p {
+    text-align: left;
+    width: 70%;
+}
+
+.info, .hero-image {
+    text-align: center;
+    width: calc(100%/2);
+}
+
+.button {
+    background-color: var(--primary);
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.third-section {
+    overflow-y: hidden;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features img {
+    width: 15%;
+}
+
+.features .desc {
+    width: 80%;
+}
+
+.title-filter h2 {
+    font-weight: 700;
+}
+
+.btn-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.link-filter {
+    color: var(--link-disabled);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 5px;
+}
+
+.link-filter-active {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+
+
+.img-content img {
+    width: 100%;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: black;
+}
+
+.description-lesson p {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.description-lesson h5 {
+    font-weight: 800;
+}
+
+.fourth-section {
+    background-color: var(--third-color);
+}
+
+.fourth-section .container h2 {
+    width: 40%;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.btn {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.category-image {
+    background-color: var(--first-section-bg);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.wrapper {
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+}
+
+.text-center a {
+    font-size: 1rem !important;
+    color: var(--primary);
+}
+
+#container-business {
+    background-color: var(--first-section-bg);
+    padding: 4rem 0 !important;
+}
+
+.image-content, .text-content {
+    width: calc(100%/2) !important;
+}
+
+.image-content img {
+    height: 90%;
+}
+
+.text-content h2, .text-content p {
+    width: 60%;
+}
+
+.event-image {
+    width: fit-content;
+}
+
+.date {
+    width: 20%;
+    border-right: 1px solid gray !important;
+}
+
+.date h2 {
+    color: var(--primary);
+}
+
+.location {
+    width: 80%;
+}
+
+.location .location-icon, .location p {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #090e23;
+}
+.footer-p{
+    color: rgb(194, 194, 194);
+}

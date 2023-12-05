@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="src/img/logo-ligasmk-dark.png" alt>
+            </div>
+            <div class="navigation">
+                <div class="link">
+                    <a href="#" class="active">home</a>
+                    <img src="src/icon/icon-arrow-bottom.svg" alt>
+                </div>
+                <div class="link">
+                    <a href="#">About Us</a>
+                    <img src="src/icon/icon-arrow-bottom.svg" alt>
+                </div>
+                <div class="link">
+                    <a href="#">Kelas</a>
+                    <img src="src/icon/icon-arrow-bottom.svg" alt>
+                </div>
+                <div class="link">
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar -->
+    <section class="first-section">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="info">
+                <div class="description">
+                    <h1>Bergabunglah dengan jutaan orang dan belajar hal
+                        baru</h1>
+                    <p>Merubah kehidupan, bisnis, dan bangsa melalui
+                        trasnformasi talenta di bidang teknologi digital
+                    </p>
+                </div>
+                <div class="button">
+                    <a href>Mulai Belajar</a>
+                    <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="src/img/shape-diagram.png" alt>
+            </div>
+        </div>
+    </section>
+    <section class="second-section bg-warning ">
+        <div class="container text-center bg-warning py-5 px-0">
+            <div class="row">
+                <div class="col-4">
+                    <div class="features d-flex justify-content-between align-items-center">
+                        <img src="src/icon/icon-online-education.svg" alt>
+                        <div class="desc">
+                            <h5 class="m-0 text-start">Membangun Karir</h5>
+                            <p class="m-0 text-start">Semua yang butuh kerja</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-4">
+                    <div class="features d-flex justify-content-between align-items-center">
+                        <img src="data:image/png;base64,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"
+                            alt>
+                        <div class="desc">
+                            <h5 class="m-0 text-start">Cari Materi Belajar</h5>
+                            <p class="m-0 text-start">Seberapa pengetahuan kamu</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-4">
+                    <div class="features d-flex justify-content-between align-items-center">
+                        <img src="src/icon/icon-online-education-laptop.svg" alt>
+                        <div class="desc">
+                            <h5 class="m-0 text-start">Kuasai Skill Belajar</h5>
+                            <p class="m-0 text-start">Fokus apa yang dibutuhkan</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <section class="third-section ">
+        <div class="container vh-100 p-0">
+            <div class="filter mb-5 mt-5">
+                <div class="title-filter">
+                    <h2>Pembelajaran Populer</h2>
+                </div>
+                <div class="btn-filter">
+                    <a href="3" class="link-filter link-filter-active">Javascript</a>
+                    <a href="3" class="link-filter">Python</a>
+                    <a href="3" class="link-filter">Web Development</a>
+                    <a href="3" class="link-filter">Art & Design</a>
+                    <a href="3" class="link-filter">Business</a>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row g-3">
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-1.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-2.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-3.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-4.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-5.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-6.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-7.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="img-content">
+                            <img src="src/img/course-8.png" alt>
+                        </div>
+                        <div class="description-lesson shadow-sm p-4">
+                            <p class="text-start mb-1">Alen Mask</p>
+                            <h5 class="text-start">Why Learn Intermediate
+                                SQL for Marketers?</h5>
+                            <div class="row">
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                        <img src="src/icon/icon-hamburger.svg" alt="">
+                                        Beginners
+                                    </a>
+                                </div>
+                                <div class="col text-start">
+                                    <a class="icon-link" href="#">
+                                       <img src="src/icon/icon-copy.svg" alt="">
+                                        3 Lessons
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section">
+        <div class="container d-flex justify-content-sm-between align-items-center py-5">
+            <img src="src/img/membership-image.png" alt="">
+            <h2>Dapatkan membership Pro GRATIS untuk kelas kamu.</h2>
+            <button type="button" class="btn px-3 py-2">Lihat semua kelas.</button>
+        </div>
+    </section>
+    <section class="fifth-section">
+        <div class="container mt-5">
+            <h2 class="text-center fw-bold mb-5">Kategori populer</h2>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-chemical.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Kimia</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-calendar.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Management</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-pencil-ruler.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Seni Budaya</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-briefcase.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Bisnis</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-science.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Astrologi</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-rocket.png" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">SEO</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-space.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Kosmologi</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-start align-items-center py-2">
+                        <div class="wrapper shadow-sm d-flex justify-content-start align-items-center">
+                        <div class="category-image">
+                            <img src="src/icon/icon-microscope.svg" alt="">
+                        </div>
+                        <div class="category-text mx-3">
+                            <h5 class="m-0">Biologi</h5>
+                            <p class="m-0">2 kelas</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center d-flex justify-content-center align-items-center mt-5 mb-5">
+            <a class="icon-link d-flex align-items-center justify-content-center fw-bolder" href="#">
+                Explore All Courses
+                <img src="src/icon/icon-double-next.svg" alt="">
+            </a>
+        </div>
+        <div class="container d-flex justify-content-between" id="container-business">
+            <div class="image-content d-flex justify-content-center align-items-center">
+                <img src="src/img/business-image.png" alt="">
+            </div>z
+            <div class="text-content d-flex flex-column justify-content-sm-evenly align-items-start">
+                <h2 class="fw-bolder">Tingkatkan sklil tim Anda.</h2>
+                <P>Berikan tim anda pengetahuan, pengalaman, dan keyakinan yang mereka butuhkan untuk mengatasi setiap masalah. Kami ingin menciptakan dunia di mana siapa pun dapat membangun sesuatu yang bermanfaat</P>
+            <button type="button" class="btn px-3 py-2">Try For Business</button>
+            </div>
+
+        </div>
+    </section>
+    <section class="sixth-section mt-5">
+        <div class="container">
+            <h2 class="fw-bolder text-center mb-5">Event sedang berlangsung di dekatmu</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="event">
+                        <div class="event-image">
+                            <img src="src/img/event-1.png" alt="">
+                        </div>
+                        <div class="event-date-location d-flex mt-3 mb-3">
+                            <div class="date text-center">
+                                <h2 class="m-0 fw-bolder">21</h2>
+                                <p class="m-0">March</p>
+                            </div>
+                            <div class="location d-flex flex-column align-items-start justify-content-center">
+                                <div class="location-icon">
+                                    <img src="src/icon/icon-location.svg" alt="">
+                                </div>
+                                <p class="my-0">North Caroline United States</p>
+                            </div>
+                        </div>
+                        <div class="event-desc">
+                            <h4 class="fw-bolder">Linear Regression in Python: Introducing to Simple Linear</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="event">
+                        <div class="event-image">
+                            <img src="src/img/event-2.png" alt="">
+                        </div>
+                        <div class="event-date-location d-flex mt-3 mb-3">
+                            <div class="date text-center">
+                                <h2 class="m-0 fw-bolder">21</h2>
+                                <p class="m-0">March</p>
+                            </div>
+                            <div class="location d-flex flex-column align-items-start justify-content-center">
+                                <div class="location-icon">
+                                    <img src="src/icon/icon-location.svg" alt="">
+                                </div>
+                                <p class="my-0">North Caroline United States</p>
+                            </div>
+                        </div>
+                        <div class="event-desc">
+                            <h4 class="fw-bolder">Linear Regression in Python: Introducing to Simple Linear</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="event">
+                        <div class="event-image">
+                            <img src="src/img/event-3.png" alt="">
+                        </div>
+                        <div class="event-date-location d-flex mt-3 mb-3">
+                            <div class="date text-center">
+                                <h2 class="m-0 fw-bolder">21</h2>
+                                <p class="m-0">March</p>
+                            </div>
+                            <div class="location d-flex flex-column align-items-start justify-content-center">
+                                <div class="location-icon">
+                                    <img src="src/icon/icon-location.svg" alt="">
+                                </div>
+                                <p class="my-0">North Caroline United States</p>
+                            </div>
+                        </div>
+                        <div class="event-desc">
+                            <h4 class="fw-bolder">Linear Regression in Python: Introducing to Simple Linear</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+           <div class="row">
+            <div class="col-3">
+                <img src="src/img/logo-ligasmk-white.png" class="mb-2" alt="">
+                <p class="footer-p mt-3">Mengubah kehidupan, bisnis, dan bangsa melalui transformasi talenta di bidang teknologi digital.</p>
+                <div class="social-media d-flex justify-content-evenly mt-5">
+                    <img src="src/icon/icon-facebook-white.svg" alt="">
+                    <img src="src/icon/icon-twitter-white.svg" alt="">
+                    <img src="src/icon/icon-linkedin-white.svg" alt="">
+                    <img src="src/icon/icon-youtube-white.svg" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="src/img/logo-ligasmk-white.png" class="mb-2" alt="">
+                <p class="footer-p mt-3">Mengubah kehidupan, bisnis, dan bangsa melalui transformasi talenta di bidang teknologi digital.</p>
+                <div class="social-media d-flex justify-content-evenly mt-5">
+                    <img src="src/icon/icon-facebook-white.svg" alt="">
+                    <img src="src/icon/icon-twitter-white.svg" alt="">
+                    <img src="src/icon/icon-linkedin-white.svg" alt="">
+                    <img src="src/icon/icon-youtube-white.svg" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="src/img/logo-ligasmk-white.png" class="mb-2" alt="">
+                <p class="footer-p mt-3">Mengubah kehidupan, bisnis, dan bangsa melalui transformasi talenta di bidang teknologi digital.</p>
+                <div class="social-media d-flex justify-content-evenly mt-5">
+                    <img src="src/icon/icon-facebook-white.svg" alt="">
+                    <img src="src/icon/icon-twitter-white.svg" alt="">
+                    <img src="src/icon/icon-linkedin-white.svg" alt="">
+                    <img src="src/icon/icon-youtube-white.svg" alt="">
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="src/img/logo-ligasmk-white.png" class="mb-2" alt="">
+                <p class="footer-p mt-3">Mengubah kehidupan, bisnis, dan bangsa melalui transformasi talenta di bidang teknologi digital.</p>
+                <div class="social-media d-flex justify-content-evenly mt-5">
+                    <img src="src/icon/icon-facebook-white.svg" alt="">
+                    <img src="src/icon/icon-twitter-white.svg" alt="">
+                    <img src="src/icon/icon-linkedin-white.svg" alt="">
+                    <img src="src/icon/icon-youtube-white.svg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
